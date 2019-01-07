@@ -1,0 +1,286 @@
+
+.video-title {
+    padding: 18px 0 5px 0;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    background: 0;
+    color: #333;
+    font-size: 1pc;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 210px;
+}
+
+    .video-title .only {
+        display: inline-block;
+        font-size: 8pt;
+        height: 1pc;
+        line-height: 1pc;
+        color: #fff;
+        background: #fa533d;
+        padding: 0 4px;
+        border-radius: 3px;
+    }
+
+    .video-title .online {
+        width: 90%;
+        background: 0;
+        color: #333;
+        font-size: 1pc;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+.video-info {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+    .video-info .video-score {
+        /*color: #fa533d;*/
+        font-size: 12px;
+    }
+
+        .video-info .video-score .video-score-small {
+            color: #fa533d;
+            font-size: 12px;
+            font-style: normal;
+        }
+
+    .video-info .video-score-em {
+        font-size: 15px;
+        color: #999;
+    }
+
+    .video-info .video-num {
+        display: inline-block;
+        font-size: 12px;
+        /*color: #999;*/
+    }
+
+.video-tools {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    margin: 10px 0 15px 0;
+}
+
+    .video-tools .video-comment {
+        width: 50%;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        vertical-align: middle;
+        float: left;
+    }
+
+        .video-tools .video-comment .commment {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            vertical-align: middle;
+            float: left;
+        }
+
+            .video-tools .video-comment .commment img {
+                width: 18px;
+                height: 18px;
+            }
+
+        .video-tools .video-comment #comment-list {
+            flex: 1;
+            height: 30px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .video-tools .video-comment ul {
+            width: 80%;
+            float: left;
+            padding-left: 5px;
+        }
+
+
+            .video-tools .video-comment ul li {
+                font-size: 14px;
+            }
+
+    .video-tools .collection-box {
+        display: inline-block;
+        position: relative;
+        width: 23px;
+        height: 22px;
+        float: left;
+    }
+
+        .video-tools .collection-box .collection {
+            background: url('../images/video/icon/heart.png');
+            background-position: left;
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: -12px;
+            top: -13px;
+            cursor: pointer;
+            background-size: 2900%;
+        }
+
+
+    .video-tools .share {
+        float: left;
+        display: block;
+        width: 21px;
+        margin-left: 10%;
+    }
+
+    .video-tools .download {
+        float: left;
+        display: block;
+        width: 22px;
+        margin-left: 10%;
+    }
+
+.video-desc {
+    height: 20px;
+    line-height: 16px;
+    font: 12px/20px "Microsoft YaHei",SimHei,helvetica,arial,verdana,tahoma,sans-serif;
+    font-family: sans-serif;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.ysd-container {
+    width: 100%;
+}
+
+    .ysd-container .ysd-box {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+        .ysd-container .ysd-box .row {
+            padding: 0px 20px;
+        }
+
+            .ysd-container .ysd-box .row .col-xs-4 {
+                padding: 0px 5px;
+            }
+
+
+                .ysd-container .ysd-box .row .col-xs-4 .ysd-video-title {
+                    position: absolute;
+                    width: 100%;
+                    height: 28px;
+                    line-height: 28px;
+                    z-index: 2;
+                    left: 0;
+                    bottom: 0;
+                    text-align: center;
+                    padding: 0 5px;
+                }
+
+@media \0screen\,screen\9 { /* 只支持IE6、7、8 */
+    .ysd-container .ysd-box .row .col-xs-4 .ysd-video-title {
+        background-color: #000000;
+        filter: Alpha(opacity=50);
+        position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom: 1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+}
+
+.ysd-container .ysd-box {
+    margin-bottom: 10px;
+}
+
+    .ysd-container .ysd-box .row {
+        margin-bottom: 15px;
+    }
+
+
+        .ysd-container .ysd-box .row .col-xs-4 .ysd-video-title span {
+            color: white;
+            z-index: 99;
+            display: inline-block;
+            width: 100%;
+            background-color: black;
+            height: 28px;
+            overflow: hidden;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+    .ysd-container .ysd-box img {
+        width: 100%;
+        height: 23vw;
+    }
+
+    .ysd-container .ysd-box .ysd-head {
+        position: relative;
+        height: 50px;
+        line-height: 35px;
+    }
+
+        .ysd-container .ysd-box .ysd-head .ysd-title {
+            display: inline-block;
+            vertical-align: bottom;
+            line-height: 16px;
+            font-weight: 700;
+        }
+
+            .ysd-container .ysd-box .ysd-head .ysd-title .ysd-title-withdot {
+                position: relative;
+                margin-left: 9px;
+                font-family: PingFangSC-Medium;
+                font-size: 16px;
+                color: #000000;
+                line-height: 16px;
+            }
+
+            .ysd-container .ysd-box .ysd-head .ysd-title .ysd-title-after {
+                position: relative;
+                margin-left: 22px;
+            }
+
+.blue-dot {
+    background-image: url(/images/index/icon1.png);
+    position: absolute;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    line-height: 35px;
+}
+
+.ysd-video-title {
+    width: 95%;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+    .ysd-video-title .ysd-video-desc {
+        width: 95%;
+        line-height: 22px;
+        overflow: hidden;
+        font-weight: bold;
+        font-size: 14px;
+        color: red;
+        height: 66px;
+    }
+
+    .ysd-video-title .ysd-video-playcount {
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        padding: 0;
+    }
